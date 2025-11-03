@@ -1,4 +1,4 @@
-import './styles.css';
+import '../styles/styles.css';
 import { calculate, toggleSign, inputPercent } from './calculator.js';
 
 const state = {
