@@ -1,5 +1,5 @@
 import './styles.css';
-import { calculate, toggleSign, applyPercent } from './calculator.js';
+import { calculate, toggleSign, inputPercent } from './calculator.js';
 
 const state = {
   displayValue: '0',
@@ -13,11 +13,11 @@ function updateDisplay() {
   display.innerText = state.displayValue;
   const displayLength = display.innerText.length;
 
-  if (displayLength > 15) {
+  if (displayLength > 10) {
     display.style.fontSize = '2em';
-  } else if (displayLength > 10) {
-    display.style.fontSize = '2.5em';
   } else if (displayLength > 8) {
+    display.style.fontSize = '2.5em';
+  } else if (displayLength > 6) {
     display.style.fontSize = '3em';
   } else {
     display.style.fontSize = '4em';
@@ -69,8 +69,13 @@ function inputOperator(operator) {
     state.shouldResetDisplay = false;
   }
 
+  if (operator === '-' && state.displayValue === '0') {
+    state.displayValue = '-';
+    return;
+  }
+
   const lastChar = state.displayValue.slice(-1);
-  if (['+', '-', '×', '/', '.'].includes(lastChar)) {
+  if (['+', '-', '×', '/'].includes(lastChar)) {
     state.displayValue = state.displayValue.slice(0, -1) + operator;
   } else {
     state.displayValue += operator;
@@ -106,7 +111,8 @@ buttons.forEach((button) => {
         state.displayValue = toggleSign(state.displayValue, state.shouldResetDisplay);
         break;
       case '%':
-        state.displayValue = applyPercent(state.displayValue, state.shouldResetDisplay);
+        state.displayValue = inputPercent(state.displayValue);
+        state.shouldResetDisplay = false;
         break;
       default:
         inputNumber(value);
