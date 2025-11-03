@@ -5,13 +5,14 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  background: linear-gradient(#414141, #181818);
 }
 
 .calculator {
   background-color: #404040;
   width: 280px;
   border-radius: 12px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
   overflow: auto;
 }
 
