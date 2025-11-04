@@ -1,4 +1,4 @@
-function findLastOperatorIndex(displayValue) {
+export function findLastOperatorIndex(displayValue) {
   const operators = ['+', '-', '×', '/'];
   let lastIndex = -1;
   operators.forEach((op) => {
