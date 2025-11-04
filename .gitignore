@@ -1,0 +1,8 @@
+/node_modules
+/dist
+.webpack/
+
+/.husky/_
+/.husky/*.log
+
+.vscode/
