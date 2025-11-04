@@ -1,5 +1,7 @@
 # Simple JavaScript Calculator
 This project is a simple, modern calculator application built with Vanilla JavaScript and bundled using Webpack.
+
+Try it out here: https://ahahaharu.github.io/simple-calculator/
 ## 1. Task
 [Link to Technical Specification](https://docs.google.com/document/d/1zpXXeSae-BlcxPKgw3DhxZA92cspVailrPYoaXSYrW8/edit?tab=t.0)
 ## 2. How to Run the App
