@@ -1,5 +1,7 @@
 # Simple JavaScript Calculator
 This project is a simple, modern calculator application built with Vanilla JavaScript and bundled using Webpack.
+
+Try it out here: https://ahahaharu.github.io/simple-calculator/
 ## 1. Task
 [Link to Technical Specification](https://docs.google.com/document/d/1zpXXeSae-BlcxPKgw3DhxZA92cspVailrPYoaXSYrW8/edit?tab=t.0)
 ## 2. How to Run the App
@@ -37,4 +39,5 @@ Folder/File | Type of Files Stored | Description
 --- | --- | ---
 **`src/`** | JavaScript, HTML, CSS | Contains the entire source code of the application.|
 **`src/scripts/`** | JavaScript (`.js`) | Contains core application logic files, such as `calculator.js` (business logic) and `index.js` (entry point and DOM manipulation). |
-**`src/styles/`** | CSS (`.css`) | Contains global and component-specific style files, such as `styles.css`. |
+**`src/styles/`** | CSS (`.css`) | Contains style files, such as `styles.css`. |
+**`.husky/`** | Shell Scripts | Contains Git hook `pre-commit` configured to automatically run code quality checks. |
