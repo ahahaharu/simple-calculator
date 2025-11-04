@@ -92,6 +92,7 @@ function handleInput(value) {
     case '-':
       inputOperator(value);
       break;
+    case '×':
     case '*':
       inputOperator('×');
       break;
