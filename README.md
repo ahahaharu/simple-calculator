@@ -39,4 +39,5 @@ Folder/File | Type of Files Stored | Description
 --- | --- | ---
 **`src/`** | JavaScript, HTML, CSS | Contains the entire source code of the application.|
 **`src/scripts/`** | JavaScript (`.js`) | Contains core application logic files, such as `calculator.js` (business logic) and `index.js` (entry point and DOM manipulation). |
-**`src/styles/`** | CSS (`.css`) | Contains global and component-specific style files, such as `styles.css`. |
+**`src/styles/`** | CSS (`.css`) | Contains style files, such as `styles.css`. |
+**`.husky/`** | Shell Scripts | Contains Git hook `pre-commit` configured to automatically run code quality checks. |
